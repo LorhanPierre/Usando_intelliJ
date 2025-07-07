@@ -41,6 +41,13 @@ public class Atendente {
         return quantidade;
     }
 
+    public double pesoFruta(){
+        System.out.println("Digite o peso da Fruta: Kg");
+        double peso = sc.nextDouble();
+        return peso;
+
+    }
+
     //LISTAR ---------------------------------------------------------------
 
     public void visualizar(Fruta fruta) {

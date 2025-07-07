@@ -1,39 +1,27 @@
 package Frutaria.model;
 
-public class Fruta {
+public class Fruta extends Produto {
 
-    private String nome;
-    private double preco;
-    private int quantidade;
+    private double peso;
 
-    public Fruta(String nome, double preco, int quantidade) {
-        this.nome = nome;
-        this.preco = preco;
-        this.quantidade = quantidade;
+    public Fruta(){
+
+        super();
+        this.peso = 0.0;
     }
 
-    public String getNome() {
-        return nome;
+    public Fruta(String nome, double preco, int quantidade,double peso){
+
+        super(nome, preco, quantidade);
+        this.peso = peso;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public double getPeso(){
+        return peso;
     }
 
-    public double getPreco() {
-        return preco;
-    }
-
-    public void setPreco(double preco) {
-        this.preco = preco;
-    }
-
-    public int getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+    public void setPeso(){
+        this.peso = peso;
     }
 
 }

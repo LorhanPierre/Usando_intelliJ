@@ -20,7 +20,8 @@ public class Estoque {
                 String nome = atendente.cadastrarNome();
                 double preco = atendente.cadastrarPreco();
                 int quantidade = atendente.cadastrarQuantidade();
-                Fruta fruta = new Fruta(nome, preco, quantidade);
+                double peso = atendente.pesoFruta();
+                Fruta fruta = new Fruta(nome, preco, quantidade, peso);
                 estoqueFruta.add(fruta);
                 System.out.println("\n========================================================");
             }
